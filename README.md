@@ -181,7 +181,13 @@ The following commands are available in the `Host_Relay_NCF.ino` program:
 
 To use these commands connect the BomberCat and set the baud rate to 9600 in your serial terminal program. The user can send them using the format command-<arg0>-<arg1>-...-<argn> and press Enter key. 
     
-####Examples
+#### Examples
+
+To set the number of the host, the user can send the command set_n followed by the desired number.
+
+<p align="center">
+<img src="https://github.com/user-attachments/assets/22c3cf83-6e4d-44d4-a5a0-a6818fdbc974" width=750>
+
 
 To set the WiFi settings, the user can send the command setup_wifi followed by the desired SSID and password.
 
@@ -201,12 +207,12 @@ To set the tracks, the user can send the command setup_track followed by the tra
 >[!IMPORTANT]
 The tracks must be sent in the same line, without any space between them, looking like: %B123456781234567^LASTNAME/FIRST^YYMMSSSDDDDDDDDDDDDDDDDDDDDDDDDD?;123456781234567=112220100000000000000?
 
-To see the current configuration, the user can send the command setup_wifi followed by the desired SSID and password.
+To see the current configuration, the user can send the command get_config.
 
 <p align="center">
 <img src="https://github.com/user-attachments/assets/1f55a741-6c6a-4733-9c39-7a8b6012f04e" width=750>
 
-To look for the commands available, the user can send the command setup_wifi followed by the desired SSID and password.
+To look for the commands available, the user can send the command help followed.
 
 <p align="center">
 <img src="https://github.com/user-attachments/assets/7cee3f42-09c6-4552-b853-4e3608c73c32" width=750>
