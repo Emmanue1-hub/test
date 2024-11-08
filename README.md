@@ -163,7 +163,7 @@ to
 strcpy(delim, "-"); // strtok_r needs a null-terminated strin
 ```
 
-The following commands are available in the `Host_Relay_NCF.ino` program:
+The following commands are available to use in the `Host_Relay_NCF.ino` program:
 
     set_n: Assigns an identifier number to hosts.
     
