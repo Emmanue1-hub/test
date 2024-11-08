@@ -118,6 +118,8 @@ With the help of this example, a BomberCat will read the desired card and transm
 
 For more information watch the YouTube video [BomberCat - NFC Card relay attack](https://www.youtube.com/watch?v=BEemmRbQAz8&ab_channel=ElectronicCats)
 
+<hr>
+
 ### Coordinator python script
 
 This script receives requests from BomberCat clients that want 
@@ -128,16 +130,12 @@ Example: use the following python script to connect to the broker named "test.mo
 
 1. Open a terminal window.
 2. Go through it until the directory where the script is.
-
-<p align="center">
-<img src="https://github.com/user-attachments/assets/7f859de0-7b3b-475a-85ba-afe7707d3c71" width=750, height=150>
-
 3. Copy and paste the next instruction:
 
         python cordinator.py test.mosquitto.org
-
+   
 <p align="center">
-<img src="https://github.com/user-attachments/assets/df4fdb62-acb2-45e7-b799-ad68e0d5ab87" width=750>
+<img src="https://github.com/user-attachments/assets/927f581f-ccae-42e9-a597-c6f121e8043a" width=750, height=150>
 
 >[!IMPORTANT]
 The coordinator script must be running before powering up both clients and hosts.    
@@ -168,40 +166,54 @@ strcpy(delim, "-"); // strtok_r needs a null-terminated strin
 
 The following commands are available in the `Host_Relay_NCF.ino` program:
 
+    set_n: Assigns an identifier number to hosts.
+    
     setup_wifi: Configures the WiFi settings, including the SSID and password.
 
-<p align="center">
-<img src="https://github.com/user-attachments/assets/5aa38805-ec99-47af-94c7-927814bae86a" width=750>
-
     setup_mqtt: Configures the MQTT server settings, including the server address.
+
+    setup_track: Allows the user to set the track data that the BomberCat will send over MQTT.
+
+    get_config: Displays the current WiFi, MQTT, Tracks, Host and ID settings.
+
+    help: Shows a list of available commands.
+
+
+To use these commands connect the BomberCat and set the baud rate to 9600 in your serial terminal program. The user can send them using the format command-<arg0>-<arg1>-...-<argn> and press Enter key. 
+    
+####Examples
+
+To set the WiFi settings, the user can send the command setup_wifi followed by the desired SSID and password.
+
+<p align="center">
+<img src="https://github.com/user-attachments/assets/5aa38805-ec99-47af-94c7-927814bae86a" width=750> 
+	  
+To set the MQTT settings, the user can send the command setup_mqtt followed by the desired MQTT Broker.
 
 <p align="center">
 <img src="https://github.com/user-attachments/assets/a4caaa82-949d-444f-a42e-06e00e7f18b6" width=750>
 
-    setup_track: Allows the user to set the track data that the BomberCat will send over MQTT.
+To set the tracks, the user can send the command setup_track followed by the tracks.
 
 <p align="center">
 <img src="https://github.com/user-attachments/assets/f95819e3-e6b3-4d8f-9820-1f724053d03e" width=750>
 
-    get_config: Displays the current WiFi, MQTT, Tracks, Host and ID settings.
+>[!IMPORTANT]
+The tracks must be sent in the same line, without any space between them, looking like: %B123456781234567^LASTNAME/FIRST^YYMMSSSDDDDDDDDDDDDDDDDDDDDDDDDD?;123456781234567=112220100000000000000?
+
+To see the current configuration, the user can send the command setup_wifi followed by the desired SSID and password.
 
 <p align="center">
 <img src="https://github.com/user-attachments/assets/1f55a741-6c6a-4733-9c39-7a8b6012f04e" width=750>
 
-    help: Shows a list of available commands.
+To look for the commands available, the user can send the command setup_wifi followed by the desired SSID and password.
 
 <p align="center">
 <img src="https://github.com/user-attachments/assets/7cee3f42-09c6-4552-b853-4e3608c73c32" width=750>
-
-To use these commands connect the BomberCat and set the baud rate to 9600 in your serial terminal program. The user can send them using the format command-<arg0>-<arg1>-...-<argn> and press Enter key. 
-    
-Example: to set the WiFi settings, the user can send the command setup_wifi followed by the desired SSID and password.
-    
-    command: setup_wifi-<SSID>-<password>
-    response: OK
-    response: OK
-    
+   
 If an error occurs, the response to the command will be ERROR.    
+
+<hr>
     
 ### Client Relay NFC
 
@@ -231,19 +243,8 @@ Example: to use the BomberCat in NFC mode a card must be inserted in host 8 and 
     response: OK  
     
 When using a BomberCat client to request the exchange of data with an NFC card on a host, a time of 10 seconds will be counted, after which the requested host will be released.    
-    
-### Coordinator python script
 
-This script receives requests from BomberCat clients that want 
-to connect to a given BomberCat host, it also takes care of releasing 
-the status of the host once the connection is terminated.
-
-Example: use the following python script to connect to the broker named "test.mosquitto.org"
-    
-    python cordinator.py test.mosquitto.org
-    
-
-The coordinator script must be running before powering up both clients and hosts.    
+<hr>
 
 ## MagSpoof
 
