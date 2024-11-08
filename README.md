@@ -1,9 +1,3 @@
-Below are all the functions that can be performed with the BomberCat using the programs that we have developed and that you can find in the project repository or by clicking [here](https://github.com/ElectronicCats/BomberCat/tree/main/firmware).
-
-## Detect Tags
-
-Below are all the functions that can be performed with the BomberCat using the programs that we have developed and that you can find in the project repository or by clicking [here](https://github.com/ElectronicCats/BomberCat/tree/main/firmware).
-
 ## Detect Tags
 
 Example to read, write and emulate NFC cards.
