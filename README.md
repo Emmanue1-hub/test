@@ -212,7 +212,7 @@ To see the current configuration, the user can send the command get_config.
 <p align="center">
 <img src="https://github.com/user-attachments/assets/1f55a741-6c6a-4733-9c39-7a8b6012f04e" width=750>
 
-To look for the commands available, the user can send the command help followed.
+To look for the commands available, the user can send the command help.
 
 <p align="center">
 <img src="https://github.com/user-attachments/assets/7cee3f42-09c6-4552-b853-4e3608c73c32" width=750>
@@ -252,7 +252,7 @@ When using a BomberCat client to request the exchange of data with an NFC card o
 
 <hr>
 
-## MagSpoof
+### MagSpoof
 
 Any magnetic stripe or credit card may be faked or emulated using MagSpoof.
 
