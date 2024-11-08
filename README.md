@@ -237,16 +237,54 @@ Here is a description of the commands that can be used with the Client_Relay_NFC
     setup_mqtt: Configures the MQTT server settings, including the server address.
     
     get_config: Shows the current configuration, including the WiFi SSID, password, and MQTT server address.
+    
     help: Shows a list of available commands.
 
-Example: To use the BomberCat in MagSpoof mode with the magnetic band stored on host 8 the following sequence of commands would be used:
+#### Examples
+
+To set the host number with which we want to establish the connection
+
+<p align="center">
+<img src="https://github.com/user-attachments/assets/15f6095c-9006-4546-8e0f-482045bbc6e8" width=750>
+
+To frees the current host number, allowing it to be used by another device.
+
+<p align="center">
+<img src="https://github.com/user-attachments/assets/7eebf6b6-c495-4b12-8284-d78bfe52e657" wodth=750>
+
+To enables the NFC mode, allowing it to read NFC cards.
+
+<p align="center">
+<img src="https://github.com/user-attachments/assets/325a3aaf-7933-4ca7-8aeb-9ee0c0670463" width=750>
+
+To enables the magnetic spoof mode, allowing it to mimic the signals of a magnetic strip card.
+
+<p align="center">
+<img src="https://github.com/user-attachments/assets/535d819f-61aa-4882-853d-593c1b8acc95" width=750>
+
+To configure the setup_wifi: Configures the WiFi settings, including the SSID and password.
+
+<p align="center">
+<img src="https://github.com/user-attachments/assets/5607378b-f4a6-443b-b829-cfbed94b78a1" width=750>
+
+Tp configures the MQTT server settings, including the server address.
+
+<p align="center">
+<img src="https://github.com/user-attachments/assets/16ff5fa1-0055-4ffc-817e-4717ee32c57f" width=750>
+
+To shows the current configuration, including the WiFi SSID, password, and MQTT server address.
+
+<p align="center">
+<img src="https://github.com/user-attachments/assets/9e42ff0a-efd3-4d09-b711-a16483341ab3" width=750>
+
+To use the BomberCat in MagSpoof mode with the magnetic band stored on host 8 the following sequence of commands would be used:
     command: mode_ms
     response: OK
     command: set_h-08
     response: OK
     response: OK
     
-Example: to use the BomberCat in NFC mode a card must be inserted in host 8 and the following sequence of commands would be used:
+To use the BomberCat in NFC mode a card must be inserted in host 8 and the following sequence of commands would be used:
     command: mode_nfc
     response: OK
     command: set_h-08
