@@ -17,8 +17,8 @@ The BomberCat has two modes:
 > _[Full YouTube video example - BomberCat Detect Tags](https://www.youtube.com/watch?v=2OUWNkKN-Vg&t)_
 
 * **Mode 2**: BomberCat will emulate the NFC card, allowing you to use it as if it were the real one.
->[!IMPORTANT]
-This mode is only accessible using the Wifi Web Server example.
+
+This 2nd mode is only accessible using the Wifi Web Server example.
 
 After each reading, the configuration mode is restarted.
 
@@ -271,11 +271,10 @@ To show the current configuration, including the WiFi SSID, password, and MQTT s
 <p align="center">
 <img src="https://github.com/user-attachments/assets/9e42ff0a-efd3-4d09-b711-a16483341ab3" width=750>
 
-To show a list of available commands,the user can send the command help
+To show a list of the available commands, the user can send the command help.
 
 <p align="center">
 <img src="https://github.com/user-attachments/assets/dd73c43f-a04f-4146-902f-16c3320a30fc" width=750>
-
 
 To use the BomberCat in MagSpoof mode with the magnetic band stored on host 8 the following sequence of commands would be used:
 
