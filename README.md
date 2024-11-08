@@ -244,7 +244,7 @@ To set the host number with which we want to establish the connection, the user 
 To free the current host number, the user can send the command free_n.
 
 <p align="center">
-<img src="https://github.com/user-attachments/assets/7eebf6b6-c495-4b12-8284-d78bfe52e657" wodth=750>
+<img src="https://github.com/user-attachments/assets/7eebf6b6-c495-4b12-8284-d78bfe52e657" width=750>
 
 To enable the NFC mode, the user can send the command mode_nfc.
 
