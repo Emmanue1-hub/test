@@ -246,8 +246,10 @@ If an error occurs, the response to the command will be ERROR.
 #### Commands.
 
 Here is a description of the commands that can be used with the Client_Relay_NFC.ino program:
-
+   
     set_h: Sets the host number with which we want to establish the connection.
+
+    set_n: Assigns an identifier number to clients.
     
     setup_wifi: Configures the WiFi settings, including the SSID and password.
     
@@ -274,6 +276,11 @@ To free the current host number, the user can send the command free_n.
 
 <p align="center">
 <img src="https://github.com/user-attachments/assets/7eebf6b6-c495-4b12-8284-d78bfe52e657" width=750>
+
+To set the client number with which it will be identified, the user can send the command set_n.
+
+<p align="center">
+<img src="https://github.com/user-attachments/assets/0861b5e1-5dae-4310-a394-f9053b560819" width=750>
 
 To enable the NFC mode, the user can send the command mode_nfc.
 
