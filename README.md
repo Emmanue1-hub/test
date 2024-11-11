@@ -249,20 +249,20 @@ Here is a description of the commands that can be used with the Client_Relay_NFC
 
     set_h: Sets the host number with which we want to establish the connection.
     
-    free_h: Frees the current host number, allowing it to be used by another device.
-    
-    mode_nfc: Enables the NFC mode, allowing it to read NFC cards.
-    
-    mode_ms: Enables the magnetic spoof mode, allowing it to mimic the signals of a magnetic strip card.
-    
     setup_wifi: Configures the WiFi settings, including the SSID and password.
     
     setup_mqtt: Configures the MQTT server settings, including the server address.
     
+    mode_nfc: Enables the NFC mode, allowing it to read NFC cards.
+    
+    mode_ms: Enables the magnetic spoof mode, allowing it to mimic the signals of a magnetic strip card.
+  
+    free_h: Frees the current host number, allowing it to be used by another device.
+
     get_config: Shows the current configuration, including the WiFi SSID, password, and MQTT server address.
     
     help: Shows a list of available commands.
-
+    
 #### Examples
 
 To set the host number with which we want to establish the connection, the user can send the command set_h.
