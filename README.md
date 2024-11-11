@@ -308,6 +308,12 @@ Works on traditional magstripe readers wirelessly.
 
 Supports all three magnetic stripe tracks, and even supports Track 1+2 simultaneously.
 
+1. Put the board into its Bootloader mode.
+2. In the files manager window that opened, copy the file TEST_BOMBERCA2T.UF2
+3. Open the Arduino Serial monitor and a notepad.
+4. Insert the MagSpoof coil into the card reader.
+5. Hold down the Button 1 for a second.
+
 <p align="center">
 	<img src="https://user-images.githubusercontent.com/107638696/202248460-a83186ac-647e-4b05-9f09-fb9ab79978d5.gif" width=600>
 </p>
