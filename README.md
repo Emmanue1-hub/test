@@ -236,7 +236,7 @@ Here is a description of the commands that can be used with the Client_Relay_NFC
 
 #### Examples
 
-To set the host number with which we want to establish the connection, the user can send the command set_n.
+To set the host number with which we want to establish the connection, the user can send the command set_h.
 
 <p align="center">
 <img src="https://github.com/user-attachments/assets/15f6095c-9006-4546-8e0f-482045bbc6e8" width=750>
@@ -251,17 +251,17 @@ To enable the NFC mode, the user can send the command mode_nfc.
 <p align="center">
 <img src="https://github.com/user-attachments/assets/325a3aaf-7933-4ca7-8aeb-9ee0c0670463" width=750>
 
-To enable the magnetic spoof mode, the user can send the command mode_ms.
+To enable the MagSpoof mode, the user can send the command mode_ms.
 
 <p align="center">
 <img src="https://github.com/user-attachments/assets/535d819f-61aa-4882-853d-593c1b8acc95" width=750>
 
-To configure configure the WiFi settings, including the SSID and password, the user can send the command setup_wifi.
+To configure the WiFi settings, including the SSID and password, the user can send the command setup_wifi.
 
 <p align="center">
 <img src="https://github.com/user-attachments/assets/5607378b-f4a6-443b-b829-cfbed94b78a1" width=750>
 
-To configure the MQTT server settings, including the server address,the user can send the command setup_mqtt.
+To configure the MQTT server settings, including the server address, the user can send the command setup_mqtt.
 
 <p align="center">
 <img src="https://github.com/user-attachments/assets/16ff5fa1-0055-4ffc-817e-4717ee32c57f" width=750>
@@ -296,7 +296,7 @@ When using a BomberCat client to request the exchange of data with an NFC card o
 
 <hr>
 
-### MagSpoof
+## MagSpoof
 
 Any magnetic stripe or credit card may be faked or emulated using MagSpoof.
 
