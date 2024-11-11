@@ -182,6 +182,8 @@ to
 strcpy(delim, "-"); // strtok_r needs a null-terminated strin
 ```
 
+#### Commands.
+
 The following commands are available to use in the `Host_Relay_NCF.ino` program:
 
     set_n: Assigns an identifier number to hosts.
@@ -240,6 +242,8 @@ If an error occurs, the response to the command will be ERROR.
 <hr>
     
 ### Client Relay NFC
+
+#### Commands.
 
 Here is a description of the commands that can be used with the Client_Relay_NFC.ino program:
 
