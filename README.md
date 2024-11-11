@@ -16,6 +16,12 @@ The BomberCat has two modes:
 
 > _[Full YouTube video example - BomberCat Detect Tags](https://www.youtube.com/watch?v=2OUWNkKN-Vg&t)_
 
+1. Upload the firmware.
+2. Open the Serial monitor.
+3. Plug the NFC antenna to the BomberCat (as shown in the video).
+4. Get an NFC card closer to the antenna.
+5. Its informations should be seen in the Serial monitor.
+
 * **Mode 2**: BomberCat will emulate the NFC card, allowing you to use it as if it were the real one.
 
 This 2nd mode is only accessible using the Wifi Web Server example.
@@ -47,6 +53,7 @@ The same holds true for bootloader output monitoring.
 
 ESP32's official Flash Download Tool was used to upgrade or flash the firmware.
 
+
 ## MagSpoof MQTT
 
 For this example is going to be used a [MQTT Broker](https://www.emqx.com/en/blog/the-ultimate-guide-to-mqtt-broker-comparison), which serves as a centralized hub that manages and routes messages between connected clients. It operates using the publish/subscribe messaging pattern.
@@ -55,8 +62,24 @@ By simulating the electromagnetic pulses used by magnetic stripes cards, MagSpoo
 
 It connects to a Wi-Fi network (WPA/WPA2), and creates a random client ID, then posts an announcement ("hello I'm here") on ["test.mosquitto.org"](https://test.mosquitto.org/) through port 1883. It also can be connected to an open or WEP network.
 
-
 With an MQTT broker, you can check to see if it is functioning properly by entering the IP address of the BomberCart, which is shown on the serial monitor, and the port, from which you can view the message transmitted in the broker.
+
+1. Get the tracks of the card which is going to be spoofed (You can follow the steps available in the MagSpoof Wiki to do it)
+2. Get Mosquitto in your PC.
+3. Connect the MagSpoof coil antenna to the BomberCat.
+4. Add your Wifi network and password in the arduino_secrets.h
+5. Upload it and open the Serial monitor.
+7. Get a connection to the topic "Mag": this can be done by opening a terminal and going through it to the directory where mosquitto was installed.
+
+   		The command used should be something like: cd C:\Program Files\mosquitto
+   
+9. To send the tracks, copy and paste the following command:
+  
+  		mosquitto_pub -h test.mosquitto.org -t "Mag" -m "%B123456781234567^LASTNAME/FIRST^YYMMSSSDDDDDDDDDDDDDDDDDDDDDDDDD?;123456781234567=112220100000000000000?"
+
+9. The MagSpoof should have began.
+
+Given this example uses an MQTT Broker, this give us the possibility to send the tracks to one BomberCat since any place.     
 
 ## MagSpoof CSV Attack.
 
@@ -132,7 +155,9 @@ Example: use the following python script to connect to the broker named "test.mo
 <img src="https://github.com/user-attachments/assets/927f581f-ccae-42e9-a597-c6f121e8043a" width=750, height=150>
 
 >[!IMPORTANT]
-The coordinator script must be running before powering up both clients and hosts.    
+The coordinator script must be running before powering up both clients and hosts.
+
+<hr>
 
 ### Host Relay NFC
 
