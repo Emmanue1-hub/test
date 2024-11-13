@@ -267,30 +267,10 @@ Here is a description of the commands that can be used with the Client_Relay_NFC
     
 #### Examples
 
-To set the host number with which we want to establish the connection, the user can send the command set_h.
-
-<p align="center">
-<img src="https://github.com/user-attachments/assets/15f6095c-9006-4546-8e0f-482045bbc6e8" width=750>
-
-To free the current host number, the user can send the command free_n.
-
-<p align="center">
-<img src="https://github.com/user-attachments/assets/7eebf6b6-c495-4b12-8284-d78bfe52e657" width=750>
-
 To set the client number with which it will be identified, the user can send the command set_n.
 
 <p align="center">
 <img src="https://github.com/user-attachments/assets/0861b5e1-5dae-4310-a394-f9053b560819" width=750>
-
-To enable the NFC mode, the user can send the command mode_nfc.
-
-<p align="center">
-<img src="https://github.com/user-attachments/assets/325a3aaf-7933-4ca7-8aeb-9ee0c0670463" width=750>
-
-To enable the MagSpoof mode, the user can send the command mode_ms.
-
-<p align="center">
-<img src="https://github.com/user-attachments/assets/535d819f-61aa-4882-853d-593c1b8acc95" width=750>
 
 To configure the WiFi settings, including the SSID and password, the user can send the command setup_wifi.
 
@@ -302,6 +282,16 @@ To configure the MQTT server settings, including the server address, the user ca
 <p align="center">
 <img src="https://github.com/user-attachments/assets/16ff5fa1-0055-4ffc-817e-4717ee32c57f" width=750>
 
+To enable the NFC mode, the user can send the command mode_nfc.
+
+<p align="center">
+<img src="https://github.com/user-attachments/assets/325a3aaf-7933-4ca7-8aeb-9ee0c0670463" width=750>
+
+To enable the MagSpoof mode, the user can send the command mode_ms.
+
+<p align="center">
+<img src="https://github.com/user-attachments/assets/535d819f-61aa-4882-853d-593c1b8acc95" width=750>
+
 To show the current configuration, including the WiFi SSID, password, and MQTT server address, the user can send the command get_config.
 
 <p align="center">
@@ -311,6 +301,17 @@ To show a list of the available commands, the user can send the command help.
 
 <p align="center">
 <img src="https://github.com/user-attachments/assets/dd73c43f-a04f-4146-902f-16c3320a30fc" width=750>
+
+To set the host number with which we want to establish the connection, the user can send the command set_h.
+
+<p align="center">
+<img src="https://github.com/user-attachments/assets/15f6095c-9006-4546-8e0f-482045bbc6e8" width=750>
+
+To free the current host number, the user can send the command free_n.
+
+<p align="center">
+<img src="https://github.com/user-attachments/assets/7eebf6b6-c495-4b12-8284-d78bfe52e657" width=750>
+
 
 To use the BomberCat in MagSpoof mode with the magnetic band stored on host 8 the following sequence of commands would be used:
 
